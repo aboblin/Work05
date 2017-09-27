@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>occupation percentages</title>
+    </head>
+    <body>
+        <h3>Here is a table with general occupational fields and the percentage of people in each field.</h3>
+        <table>
+            <tr>
+                <th>Occupation field</th>
+                <th>Percentage of people</th>
+            </tr>
+            {% for i in data.keys %}
+                <tr>
+                    <td>{{i}}</td>
+                    <td>{{data[i]}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        <p>Randomly selected occupation: {{randomed}}</p>
+    </body>
+</html>
